@@ -11,19 +11,30 @@
 <body>
 	<div class="wrapper">
 		<header>
-			<h1 class="title">Hello World</h1>
+			<h1 class="title">Clicker</h1>
 		</header>
 		<main>
-			<section class="clicker-section">
-				<div>
-					<h1 class="clicker-section__title">Clicker</h1>
+			<section>
+				<h1 class="section-title">Cats</h1>
+	
+				<article  class="cat-one" id="catOne">
+					<h1 class="cat-one__title">A</h1>
 					<figure>
 						<img src="images/placeholder.jpg" class="placeholder">
 						<figcaption class="placeholder-description">A blue square</figcaption>
 					</figure>
-					<p class="click-tracker" id="clickTracker" onclick="incrementByOne()">0</p>
-				</div>
-				
+					<div class="click-tracker" id="clickTrackerOne" onclick="incrementCatOne()">0</div>
+				</article>
+								
+				<article  class="cat-two" id="catTwo">
+					<h1 class="cat-two__title">B</h1>
+					<figure>
+						<img src="images/placeholder.jpg" class="placeholder">
+						<figcaption class="placeholder-description">A blue square</figcaption>
+					</figure>
+					<div class="click-tracker" id="clickTrackerTwo" onclick="incrementCatTwo()">0</div>
+				</article>				
+	
 			</section>
 		</main>
 	</div>
