@@ -15,44 +15,72 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="images/favicon/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff"></head>
+	<meta name="theme-color" content="#ffffff">
+</head>
 
 <body>
 	<div class="wrapper">
 		<header>
 			<h1 class="title">Clicker</h1>
 		</header>
-		<main>
-			<section class="cat-section">
-				<h1 class="section-title">Cats</h1>
-	
-				<article  class="cat cat-one" id="catOne">
-					<h1 class="cat-one__title">A</h1>
-					<figure>
-						<img src="images/placeholder.jpg" class="placeholder">
-						<figcaption class="placeholder-description">A blue square</figcaption>
-					</figure>
-					<div class="click-tracker" id="clickTrackerOne" onclick="incrementCatOne()">0</div>
-				</article>
-								
-				<article  class="cat cat-two" id="catTwo">
-					<h1 class="cat-two__title">B</h1>
-					<figure>
-						<img src="images/placeholder.jpg" class="placeholder">
-						<figcaption class="placeholder-description">A blue square</figcaption>
-					</figure>
-					<div class="click-tracker" id="clickTrackerTwo" onclick="incrementCatTwo()">0</div>
-				</article>				
-	
-			</section>
-		</main>
+
+		<section class="cat-section">
+			<h1>Cat list</h1>
+			<ul>
+				<li id="one">
+					<img src="images/cat.jpg" alt="An orange and black cat" id="one-img">
+					<span>Jerry</span>
+					<span id="clicks-of-one">0</span>
+				</li>
+				<li id="two">
+					<img src="images/cat2.jpg" alt="An orange and black cat" id="two-img">
+					<span>Pier</span>
+					<span id="clicks-of-two">0</span>
+
+				</li>
+				<li id="three">
+					<img src="images/cat3.jpg" alt="An orange and black cat">
+					<span>Nathan</span>
+					<span id="clicks-of-three">0</span>
+
+				</li>
+				<li id="four">
+					<img src="images/cat4.jpg" alt="An orange and black cat">
+					<span>Winchester</span>
+					<span id="clicks-of-four">0</span>
+
+				</li>
+				<li id="five">
+					<img src="images/cat5.jpg" alt="An orange and black cat">
+					<span>Ralph</span>
+					<span id="clicks-of-five">0</span>
+
+				</li>
+				<li id="six">
+					<img src="images/cat6.jpg" alt="An orange and black cat">
+					<span>Wut</span>
+					<span id="clicks-of-six">0</span>
+
+				</li>
+			</ul>
+
+			<article id="cat">
+				<h1>Cat Area</h1>
+				<figure>
+					<img src="" class="placeholder" id="cat-img">
+					<figcaption class="placeholder-description" id="caption"></figcaption>
+				</figure>
+				<p id="clickTracker"></p>
+			</article>
+
+		</section>
 	</div>
 	<script src="js/script.js"></script>
 </body>
